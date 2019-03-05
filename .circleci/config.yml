@@ -9,5 +9,7 @@ jobs: # a collection of steps
     steps: # a collection of executable commands 
       - checkout
       - run: npm install --save-dev      
+      - run: pip install --upgrade pip
+      - run: python3 -m venv venv
       #- run: bash <(curl -s https://copilot.blackducksoftware.com/ci/circle/scripts/upload)
       - run: bash <(curl -s https://scripts.scantist.com/staging/ci-circle-jar.sh)
