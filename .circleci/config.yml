@@ -9,8 +9,7 @@ jobs: # a collection of steps
     steps: # a collection of executable commands 
       - checkout
       - run: npm install --save-dev  
-    
-       - run: 
+      - run: 
           name: install dependencies
           command: | 
             rm -rf node_modules
